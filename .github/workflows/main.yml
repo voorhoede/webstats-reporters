@@ -22,7 +22,7 @@ jobs:
 
     - name: Webstats Netlify reporter
       id: webstats-netlify-reporter
-      uses: voorhoede/webstats-netlify-reporter@v0.1.0
+      uses: voorhoede/webstats-netlify-reporter@master
       env:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_ID: ${{ secrets.NETLIFY_ID }}
