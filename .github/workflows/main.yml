@@ -8,18 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - name: Checkout repo
-      uses: actions/checkout@v2
-
-    - name: Install
-      run: npm install
-
-    - name: Codegen
-      run: npm run codegen
-
-    - name: Build
-      run: npm run build
-
     - name: Webstats Netlify reporter
       id: webstats-netlify-reporter
       uses: voorhoede/webstats-netlify-reporter@master
