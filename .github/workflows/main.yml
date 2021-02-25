@@ -16,3 +16,8 @@ jobs:
         NETLIFY_ID: ${{ secrets.NETLIFY_ID }}
         WEBSTATS_API_KEY: ${{ secrets.WEBSTATS_API_KEY }}
         WEBSTATS_PROJECT_ID: ${{ secrets.WEBSTATS_PROJECT_ID }}
+    
+      run: npm ci
+      run: npm run codegen
+      run: npm run build
+      run: npm run save
